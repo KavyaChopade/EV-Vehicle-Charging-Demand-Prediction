@@ -33,7 +33,7 @@ div[data-testid="stSidebar"] {
 
 # ==== Load Model with Error Handling ====
 try:
-    model = joblib.load("forecasting_ev_model (1).pkl")
+    model = joblib.load("forecasting_ev_model.pkl")
 except Exception as e:
     st.error("❌ Model loading failed. Please check the .pkl file.")
     st.stop()
@@ -280,3 +280,4 @@ st.markdown("""
     Built during <b>AICTE Internship</b> | Developed by <b>Kavya Chopade</b> 🚗🔋
 </div>
 """, unsafe_allow_html=True)
+
