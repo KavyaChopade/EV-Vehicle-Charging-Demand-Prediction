@@ -41,7 +41,7 @@ except Exception as e:
 # ==== Load Data with Caching ====
 @st.cache_data
 def load_data():
-    df = pd.read_csv("preprocessed_ev_data.csv")
+    df = pd.read_csv("preprocessed_ev_data.xls")
     df['Date'] = pd.to_datetime(df['Date'])
     return df
 
@@ -280,4 +280,5 @@ st.markdown("""
     Built during <b>AICTE Internship</b> | Developed by <b>Kavya Chopade</b> 🚗🔋
 </div>
 """, unsafe_allow_html=True)
+
 
