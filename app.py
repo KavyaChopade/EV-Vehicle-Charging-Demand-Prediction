@@ -49,7 +49,7 @@ footer {
 
 # ==== Load Model ====
 try:
-    model = joblib.load("forecasting_ev_model (1).pkl")
+    model = joblib.load("forecasting_ev_model.pkl")
 except Exception as e:
     st.error("❌ Model loading failed. Please check the .pkl file.")
     st.stop()
@@ -277,3 +277,4 @@ st.download_button("📥 Download Forecast Data (CSV)", csv_bytes, "ev_forecast.
 
 # ==== Footer ====
 st.markdown("<footer>Built during <b>AICTE Internship</b> | Developed by <b>Kavya Chopade</b> 🚗🔋</footer>", unsafe_allow_html=True)
+
